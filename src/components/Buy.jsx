@@ -1,6 +1,5 @@
 import React from 'react'
-
-import ChapaCheckout from '@chapa_et/inline.js';
+// @ts-ignore
  
 const chapa = new ChapaCheckout({
     publicKey: 'CHAPUBK_TEST-5Liyx3G1occ8WzKPMIQIBVoGHDHd6p8i',
