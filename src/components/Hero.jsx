@@ -11,15 +11,15 @@ const Hero = () => {
     <nav className="w-full flex justify-between items-center p-8 bg-transparent absolute top-0 left-0">
       <img src={powerfit} alt="Power Fit Logo" className=" w-60 h-20 object-cover" />
     </nav>
-    <div className="flex w-full h-full">
-      <div className="w-3/5 flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold mb-4">Work Out, Power Up!</h1>
-        <p className="text-xl">Revolutionize fitness with our electricity-generating gym equipment.</p>
+    <div className="flex w-full md:h-full justify-center">
+      <div className="w-3/5 flex flex-col items-center justify-center text-center">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 mt-60 md:mt-0 ">Work Out, Power Up!</h1>
+        <p className="md:text-xl text-md ">Revolutionize fitness with our electricity-generating gym equipment.</p>
         <button onClick={scrollToContact} className="mt-6 px-6 py-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700 transition duration-300 text-lg">
           Contact Us
         </button>
       </div>
-      <div className="w-2/5 bg-yellow-500 flex items-center pt-16 pl-5 ">
+      <div className="w-2/5 bg-yellow-500 items-center pt-16 pl-5 hidden md:flex">
         {/* Rectangle */}
         <div className="w-3/5 h-[90%] bg-zinc-800 m-auto relative z-10 ">
         {/* Image */}

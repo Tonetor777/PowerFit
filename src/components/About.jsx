@@ -1,8 +1,8 @@
 import React from 'react';
 
 const About = () => (
-  <div className="p-8 px-32">
-    <h1 className="text-4xl font-bold mb-12 border-l-4 border-yellow-500 pl-4 ml-8 ">About Us</h1>
+  <div className="p-8 md:px-32">
+    <h1 className="text-4xl font-bold mb-12 border-l-4 border-yellow-500 pl-4 md:ml-8 ">About Us</h1>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-zinc-800 ">
       <div className="bg-yellow-500 p-6 transition-transform duration-300 ease-in-out transform hover:translate-y-[-20px]">
         <h2 className="text-2xl font-bold mb-4">Who We Are</h2>
@@ -18,7 +18,7 @@ const About = () => (
       </div>
     </div>
     <div className='mt-12 p-6 text-yellow-500'>
-  <h2 className="text-3xl font-bold mb-10 text-center text-zinc-900">Why Choose Us?</h2>
+  <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center text-zinc-900">Why Choose Us?</h2>
   <div className="flex flex-col gap-6">
     {[
       "Eco-Friendly Innovation: Be part of the movement to make workouts sustainable.",
@@ -28,9 +28,9 @@ const About = () => (
     ].map((item, index) => (
       <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-zinc-900 flex items-center">
         <div className="mr-4">
-          <span className="text-yellow-500 font-bold text-5xl items-center justify-center">{`0${index + 1}`}</span>
+          <span className="text-yellow-500 font-bold text-2xl md:text-5xl items-center justify-center">{`0${index + 1}`}</span>
         </div>
-        <p className="marker:text-yellow-500 marker:text-2xl text-xl font-semibold">{item}</p>
+        <p className="marker:text-yellow-500 marker:text-2xl md:text-xl font-semibold">{item}</p>
       </div>
     ))}
   </div>
